@@ -1,4 +1,4 @@
 class Movement < ActiveRecord::Base 
-    belongs_to :activists
+    belongs_to :activist
     has_many :protests
 end 
