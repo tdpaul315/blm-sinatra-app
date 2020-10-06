@@ -1,0 +1,3 @@
+class ActivistsController < ApplicationController
+     
+end 

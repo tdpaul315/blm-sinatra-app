@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_29_023107) do
+ActiveRecord::Schema.define(version: 2020_10_06_133013) do
 
   create_table "activists", force: :cascade do |t|
-    t.string "name"
+    t.string "username"
     t.string "location"
     t.integer "age"
     t.boolean "active"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2020_09_29_023107) do
     t.string "name"
     t.integer "yr_started"
     t.string "description"
-    t.integer "activists_id"
+    t.integer "activist_id"
   end
 
   create_table "protests", force: :cascade do |t|
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 2020_09_29_023107) do
     t.time "time"
     t.integer "movement_id"
     t.integer "activist_id"
+    t.boolean "arrests"
   end
 
 end
